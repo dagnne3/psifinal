@@ -73,6 +73,7 @@ def reset_password_view(request, user_id):
     return render(request, "password_reset_confirm.html")
 
 def home_view(request):
+    # Actualizado: 2025-12-14 - Renderiza pagina_principal.html
     """
     Vista principal para usuarios normales (NO administradores).
     Verifica que el usuario esté logueado (sesión activa) antes de mostrar la página.
